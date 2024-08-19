@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equi="X-UA-Compatible" content="IE=edge">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Roshan Patil - Web Develepoer, Cloud, Linux Enthusiast</title>
+    <style>
+    body{
+        background-image: url("image/un.jpg");
+        height:200%;
+       width: 150%;
+/*               object-fit: cover;*/
+/*                background-position: center;*/
+        background-repeat: no-repeat;
+        background-size: cover;
+    }</style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar sidebarGo">
+            
+            <nav>
+                <ul>
+                    <li><a href="first.html">Home</a></li>
+                    <li><a href="about.html">AboutMe</a></li>
+                    <li><a href="work.php">MyWork</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.php">ContactMe</a></li>
+                </ul>
+            </nav>
+        </div>
+    <div class="main">
+        
+            <div class="hamburger">
+                <img class="ham" src="ham1.png" alt="" width="23px">
+                <img class="cross" src="cross.png" alt="" width="23px">
+            </div>
+            <div class="intro">
+               
+                    <h2>About Me</h2>
+                    <p>Hello, my name is Roshan Dattatray Patil. Currently i'am persuing my masters degree in Computer Application under The Somaiya Vidyavihar University</p>               
+                <h2>My Skills</h2>
+                <div class="skillcontainer">
+                    <div class="skillitem">HTML: <div class="skill hundred"></div></div>
+                    <div class="skillitem">CSS: <div class="skill seventy5"></div></div>
+                    <div class="skillitem">JavaScript: <div class="skill fifty"></div></div>
+                    <div class="skillitem">PHP: <div class="skill seventy5"></div></div>
+                    <div class="skillitem">Java: <div class="skill twenty5"></div></div>
+                    <div class="skillitem">MySQL: <div class="skill hundred"></div></div>
+                    <div class="skillitem">Linux: <div class="skill seventy5"></div></div>
+                    <div class="skillitem">AWS: <div class="skill hundred"></div></div>
+                    
+                </div>
+            </div>
+            </div>
+</div>
+<script type="text/javascript">
+
+    document.querySelector('.cross').style.display = 'none';
+    document.querySelector('.hamburger').addEventListener("click",()=>{
+        document.querySelector('.sidebar').classList.toggle('sidebarGo');
+        if(document.querySelector('.sidebar').classList.contains('sidebarGo'))
+        {
+            document.querySelector('.ham').style.display = 'inline'
+            document.querySelector('.cross').style.display = 'none'
+        }
+        else{
+            document.querySelector('.ham').style.display = 'none'
+            setTimeout(() => { 
+                document.querySelector('.cross').style.display = 'inline'
+            }, 300);
+        }
+    })
+</script>
+
+</body>
+</html>
