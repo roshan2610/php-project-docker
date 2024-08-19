@@ -1,8 +1,8 @@
-<?php
+ii<?php
    $server="localhost";
    $username="root";
    $password="";
-   $dbname="roshanp";
+   $dbname="portfolio-site";
     $con = mysqli_connect("$server","$username","$password","$dbname");
     // Check connection
     if (mysqli_connect_errno()){
