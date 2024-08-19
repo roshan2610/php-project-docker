@@ -1,7 +1,7 @@
 ii<?php
    $server="localhost";
    $username="root";
-   $password="";
+   $password="root";
    $dbname="portfolio-site";
     $con = mysqli_connect("$server","$username","$password","$dbname");
     // Check connection
